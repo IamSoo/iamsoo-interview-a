@@ -10,7 +10,7 @@ public class CreditScoreCalculatorService extends AbstractCreditScoreCalculatorS
     public int calculateCreditScore(CreditScoreInputs input) {
         try {
             int scoreCompanyType = getScoreByCompanyType(input.getCompanyType());
-            int scoreNoOfEmployee = getScoreByNoOfEmpoyee(input.getNoOfEmployee());
+            int scoreNoOfEmployee = getScoreByNoOfEmployee(input.getNoOfEmployee());
             int scoreTimeInBusiness = getScoreByTimeInBusiness(input.getTimeInBusiness());
 
             return scoreCompanyType + scoreNoOfEmployee + scoreTimeInBusiness;

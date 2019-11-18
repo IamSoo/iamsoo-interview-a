@@ -66,7 +66,7 @@ public abstract class AbstractCreditScoreCalculatorService {
         }
     }
 
-    public int getScoreByNoOfEmpoyee(Integer noOfEmployee) {
+    public int getScoreByNoOfEmployee(Integer noOfEmployee) {
         Optional<Integer> optional = Optional.ofNullable(NO_OF_EMPLOYEE_MAP.floorEntry(noOfEmployee).getValue());
         if (optional.isPresent())
             return optional.get();

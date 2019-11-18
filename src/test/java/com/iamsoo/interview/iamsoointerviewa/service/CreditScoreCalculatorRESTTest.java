@@ -28,12 +28,9 @@ public class CreditScoreCalculatorRESTTest {
     int serverRunningPort;
 
     @Test
-    public void testCreditScoreContollerServiceStatus() throws URISyntaxException{
+    public void testCreditScoreControllerServiceStatus() throws URISyntaxException{
         final String baseUrl = "http://localhost:"+serverRunningPort+"/";
         URI uri = new URI(baseUrl);
-
-        HttpHeaders headers = new HttpHeaders();
-        headers.set("Content-Type","application/json");
 
         String response = this.restTemplate.getForObject(uri,String.class);
 
@@ -43,7 +40,7 @@ public class CreditScoreCalculatorRESTTest {
 
 
     @Test
-    public void testCreditScoreContollerCalculateCreditScore() throws URISyntaxException{
+    public void testCreditScoreControllerCalculateCreditScore() throws URISyntaxException{
         final String baseUrl = "http://localhost:"+serverRunningPort+"/calculateCreditScore";
         URI uri = new URI(baseUrl);
 

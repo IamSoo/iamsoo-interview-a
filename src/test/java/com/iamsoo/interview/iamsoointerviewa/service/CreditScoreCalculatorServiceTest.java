@@ -24,11 +24,11 @@ public class CreditScoreCalculatorServiceTest {
     public void calculateScoreByNoOfEmployee(){
         CreditScoreCalculatorService service = new CreditScoreCalculatorService();
         int expected = 0;
-        int actual = service.getScoreByNoOfEmpoyee(5);
+        int actual = service.getScoreByNoOfEmployee(5);
         Assert.assertEquals("GetScore By No of Employee  :",expected,actual);
 
         expected = 20;
-        actual = service.getScoreByNoOfEmpoyee(9);
+        actual = service.getScoreByNoOfEmployee(9);
         Assert.assertEquals("GetScore By No of Employee :",expected,actual);
     }
 

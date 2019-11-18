@@ -16,7 +16,7 @@ public class CalculateCreditScoreStepDefTest implements En {
         service = new CreditScoreCalculatorService();
 
         When("^The calculateCreditAssessmentScore API is called with parameters \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"$", (String numberOfEmployees, String companyType, String numberOfYearsOperated) -> {
-            result = service.getScoreByNoOfEmpoyee(Integer.parseInt(numberOfEmployees) ) + service.getScoreByCompanyType(companyType) + service.getScoreByTimeInBusiness(Integer.parseInt(numberOfYearsOperated));
+            result = service.getScoreByNoOfEmployee(Integer.parseInt(numberOfEmployees) ) + service.getScoreByCompanyType(companyType) + service.getScoreByTimeInBusiness(Integer.parseInt(numberOfYearsOperated));
         });
 
         Then("^The credit assessment score should match \"([^\"]*)\"$", (Integer arg0) -> {
