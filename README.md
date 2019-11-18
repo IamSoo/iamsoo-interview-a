@@ -6,8 +6,8 @@ The app exposes two endpoints and one endpoint takes 3 input parameters and calc
 some static data.
 
 #### Endpoints: 
-/ : Just to check the status  
-/calculateCreditScore : Return credit score based on 3 inputs.  
+"/" : Just to check the status  
+"/calculateCreditScore" : Return credit score based on 3 inputs.  
 
 
 #### Testing:  
@@ -17,8 +17,8 @@ The source code contains both unit tests using TDD and BDD.
 The APP also exposes swagger endpoint at http://IP:8085/swagger-ui.html  
 
 
-For example :  
-Input : Company Type,No Of employee, Time in Business
+Example :  
+Input : Company Type,No Of employee, Time in Business  
 Output : Credit Score
 
 ### To Run as a docker container
