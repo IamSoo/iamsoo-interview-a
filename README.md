@@ -1,7 +1,7 @@
 ## Coding Assignment A
 
 This repo is for the the back-end coding assignment of **.
-Its a spring boot APP with developed with Java8.
+Its a spring boot APP developed with Java8.
 The app exposes two endpoints and one endpoint takes 3 input parameters and calculate the total score based on
 some static data.
 
